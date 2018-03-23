@@ -20,6 +20,7 @@ $(document).ready(function() {
         // Hide additional survey results if survey is retaken.
         $("button.btn").click(function() {
           $(".survey-card").hide();
+          $(".survey-result").show();
         });
         // Hide survey questions on form submit
         $(".survey").hide();
@@ -28,6 +29,8 @@ $(document).ready(function() {
         // On close button click, show survey again and hide results
         $(".back-button").click(function() {
           $(".survey").show();
+          // Reset form back to their first options/zeroeth positions
+          $("#formOne")[0].reset();
           $(".survey-result").hide();
         });
         event.preventDefault();
