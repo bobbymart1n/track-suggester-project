@@ -1,0 +1,9 @@
+.survey {
+    width: 100%;
+    max-width: 800px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
