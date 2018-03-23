@@ -1,13 +1,15 @@
 /*  Global Styles
 ==========================*/
 .container {
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    flex-direction: column; */
 }
 
-.survey {
+.survey, .survey-result {
     width: 100%;
     max-width: 800px;
+    margin: auto;
 }
 
 #frontEnd, #backEnd, #java, #cSharp, #ruby {
