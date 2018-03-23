@@ -19,6 +19,9 @@ p, select, option, span, input, button, label {
 label {
   font-size: 14px;
 }
+a {
+  color: #D5C7BC;
+}
 
 .container {
   display: flex;
