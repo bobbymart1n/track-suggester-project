@@ -19,11 +19,11 @@ $(document).ready(function() {
       $("#any").show();
     }
     // Show survey results on submit
-    $(".survey-result").fadeIn();
+    $(".survey-result").slideDown();
     // Insert users name at the beginning of each outcomes description.
     $(".user-name").text(name);
     // Hide survey questions on form submit
-    $(".survey").fadeOut();
+    $(".survey").slideUp();
     // When result shows, show a close button in top right corner of result card
     $(".back-button").show();
     // Hide additional survey results if survey is retaken.
@@ -32,10 +32,10 @@ $(document).ready(function() {
     });
     // On close button click, show survey again and hide results
     $(".back-button").click(function() {
-      $(".survey").fadeIn();
+      $(".survey").slideDown();
       // Reset form back to their first options/zeroeth positions and hide survey results
       $("#formOne")[0].reset();
-      $(".survey-result").fadeOut();
+      $(".survey-result").slideUp();
     });
     event.preventDefault();
   });

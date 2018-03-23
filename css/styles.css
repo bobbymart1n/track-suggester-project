@@ -6,12 +6,10 @@ body {
   height: 100vh;
   color: #F1FFFA;
 }
-
 h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
-
 p, select, option, span, input, button, label {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -22,14 +20,12 @@ label {
 a {
   color: #D5C7BC;
 }
-
 .page-header {
   font-size: 100px;
   margin-top: 0px;
   margin-bottom: 40px;
   text-decoration: underline;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -37,11 +33,9 @@ a {
   align-items: center;
   height: 100%;
 }
-
 .survey-result {
   position: relative;
 }
-
 .back-button {
   position: absolute;
   z-index: 2;
@@ -54,24 +48,18 @@ a {
   width: 100%;
   opacity: .4;
 }
-
 #frontEnd, #backEnd, #java, #maybeNot, #any, .survey-result, .back-button {
   display: none;
 }
 
 /*  Form Styles
 ==========================*/
-
 .survey, .survey-result .card {
   background: rgba(147, 183, 190, .6);
   padding: 30px;
   border-radius: 10px;
-}
-
-.survey, .survey-result {
   border: 5px solid #D5C7BC;
 }
-
 .form-control {
   background: #F1FFFA;
   border-color: #1B2735;
@@ -79,7 +67,6 @@ a {
 .form-control:focus {
   background: #F1FFFA;
 }
-
 .btn-primary {
   background: #785964;
   border: 0;
