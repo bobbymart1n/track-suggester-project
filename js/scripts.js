@@ -19,8 +19,9 @@ $(document).ready(function() {
         }
         console.log(result);
         $("button.btn").click(function() {
-          $(".survey").detach();
+          $(".survey-card").hide();
         });
+        $(".survey").hide();
         event.preventDefault();
     });
 });
