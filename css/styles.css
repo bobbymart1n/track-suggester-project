@@ -23,6 +23,13 @@ a {
   color: #D5C7BC;
 }
 
+.page-header {
+  font-size: 100px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -56,9 +63,13 @@ a {
 ==========================*/
 
 .survey, .survey-result .card {
-  background: #93B7BE;
+  background: rgba(147, 183, 190, .6);
   padding: 30px;
   border-radius: 10px;
+}
+
+.survey, .survey-result {
+  border: 5px solid #D5C7BC;
 }
 
 .form-control {
