@@ -6,10 +6,15 @@ $(document).ready(function() {
         var questionFour = parseInt($("#qFour").val());
         var questionFive = parseInt($("#qFive").val());
         var result = questionOne + questionTwo + questionThree + questionFour + questionFive;
-        console.log(result);
-        if(result ) {
-
-        }
+        // if(result <= 4) {
+        //
+        // } else if(result >= 7) {
+        //
+        // } else if(result > 8) {
+        //
+        // } else {
+        //
+        // }
         event.preventDefault();
     });
 });

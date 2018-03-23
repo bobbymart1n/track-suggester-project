@@ -1,9 +1,15 @@
+/*  Global Styles
+==========================*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .survey {
     width: 100%;
     max-width: 800px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
+#frontEnd, #backEnd, #java, #cSharp, #ruby {
+  display: none;
 }
