@@ -7,6 +7,21 @@
     margin: auto;
 }
 
-#frontEnd, #backEnd, #java, #maybeNot, #any {
+.survey-result {
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+  top: 10px;
+  width: 20px;
+}
+.back-button img {
+  width: 100%;
+}
+
+#frontEnd, #backEnd, #java, #maybeNot, #any, .back-button {
   display: none;
 }

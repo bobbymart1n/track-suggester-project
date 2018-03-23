@@ -17,11 +17,19 @@ $(document).ready(function() {
         }  else {
           $("#any").show();
         }
-        console.log(result);
+        // Hide additional survey results if survey is retaken.
         $("button.btn").click(function() {
           $(".survey-card").hide();
         });
+        // Hide survey questions on form submit
         $(".survey").hide();
+        // When result shows, show a close button in top right corner of result card
+        $(".back-button").show();
+        // On close button click, show survey again and hide results
+        $(".back-button").click(function() {
+          $(".survey").show();
+          $(".survey-result").hide();
+        });
         event.preventDefault();
     });
 });
