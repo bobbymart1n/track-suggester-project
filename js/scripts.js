@@ -18,11 +18,11 @@ $(document).ready(function() {
     }  else {
       $("#any").show();
     }
+    $(".survey-result").show();
     $(".user-name").text(name);
     // Hide additional survey results if survey is retaken.
     $("button.btn").click(function() {
       $(".survey-card").hide();
-      $(".survey-result").show();
     });
     // Hide survey questions on form submit
     $(".survey").hide();

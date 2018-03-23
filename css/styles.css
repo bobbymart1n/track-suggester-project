@@ -1,5 +1,33 @@
 /*  Global Styles
 ==========================*/
+body {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  background-size: cover;
+  height: 100vh;
+  color: #F1FFFA;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p, select, option, span, input, button, label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+label {
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .survey-result {
   position: relative;
 }
@@ -13,8 +41,23 @@
 }
 .back-button img {
   width: 100%;
+  opacity: .4;
 }
 
-#frontEnd, #backEnd, #java, #maybeNot, #any, .back-button {
+#frontEnd, #backEnd, #java, #maybeNot, #any, .survey-result, .back-button {
   display: none;
+}
+
+/*  Form Styles
+==========================*/
+
+.survey, .survey-result .card {
+  background: #93B7BE;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: #785964;
+  border: 0;
 }
