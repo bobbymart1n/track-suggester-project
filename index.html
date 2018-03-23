@@ -11,102 +11,100 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="page-header">Epicodus</h1>
-      <div class="row">
-        <div class="survey col-md-12">
-          <h1 class="text-center">What track should you go into?</h1>
-          <form class="form" id="formOne">
-            <div class="row">
-              <div class="form-group col">
-                <label for="name">Enter your first name:</label>
-                <input type="text" class="form-control" placeholder="First Name" id="name">
-              </div>
-              <div class="form-group col">
-                <label for="qOne">What interests you more?</label>
-                <select class="question form-control" id="qOne">
-                    <option value="0">Select an option</option>
-                    <option value="1">Design/Aesthetic</option>
-                    <option value="2">Data Structures and Server Stuff</option>
-                    <option value="3">Mobile App Development</option>
-                </select>
-              </div>
+      <h1 class="page-header text-center">Epicodus</h1>
+      <div class="survey col-md-12">
+        <h1 class="text-center">What track should you go into?</h1>
+        <form class="form" id="formOne">
+          <div class="row">
+            <div class="form-group col-md-6 col-xs-12">
+              <label for="name">Enter your first name:</label>
+              <input type="text" class="form-control" placeholder="First Name" id="name">
             </div>
-            <div class="row">
-              <div class="form-group col">
-                <label for="qTwo">What is your ideal work day?</label>
-                <select class="question form-control" id="qTwo">
-                    <option value="0">Select an option</option>
-                    <option value="1">Working on a new project and getting inspiration from others</option>
-                    <option value="2">Building back-end logic for applications</option>
-                    <option value="3">Working on building the next big mobile app</option>
-                </select>
-              </div>
-              <div class="form-group col">
-                <label for="qThree">What option is closest to your final career goal?</label>
-                <select class="question form-control" id="qThree">
-                    <option value="0">Select an option</option>
-                    <option value="1">Getting a design from a designer and making it into a fully functional site or application</option>
-                    <option value="2">Building and plugging in data for a site or application.</option>
-                    <option value="3">Android Applications Development</option>
-                </select>
-              </div>
+            <div class="form-group col-md-6 col-xs-12">
+              <label for="qOne">What interests you more?</label>
+              <select class="question form-control" id="qOne">
+                  <option value="0">Select an option</option>
+                  <option value="1">Design/Aesthetic</option>
+                  <option value="2">Data Structures and Server Stuff</option>
+                  <option value="3">Mobile App Development</option>
+              </select>
             </div>
-            <div class="row">
-              <div class="form-group col">
-                <label for="qFour">What type of music are you into?</label>
-                <select class="question form-control" id="qFour">
-                    <option value="0">Select an option</option>
-                    <option value="0">Electronic</option>
-                    <option value="0">Jazz</option>
-                    <option value="0">Anything really!</option>
-                </select>
-              </div>
-              <div class="form-group col">
-                <label for="qFive">Are you able to work together as a team with coworkers or cohorts?</label>
-                <select class="question form-control" id="qFive">
-                    <option value="0">Select an option</option>
-                    <option value="1">Yes</option>
-                    <option value="-100">No</option>
-                    <option value="0">People?</option>
-                </select>
-              </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6 col-xs-12">
+              <label for="qTwo">What is your ideal work day?</label>
+              <select class="question form-control" id="qTwo">
+                  <option value="0">Select an option</option>
+                  <option value="1">Working on a new project and getting inspiration from others</option>
+                  <option value="2">Building back-end logic for applications</option>
+                  <option value="3">Working on building the next big mobile app</option>
+              </select>
             </div>
-            <button type="submit" class="btn btn-primary" name="button">Submit</button>
-          </form>
+            <div class="form-group col-md-6 col-xs-12">
+              <label for="qThree">What option is closest to your final career goal?</label>
+              <select class="question form-control" id="qThree">
+                  <option value="0">Select an option</option>
+                  <option value="1">Getting a design from a designer and making it into a fully functional site or application</option>
+                  <option value="2">Building and plugging in data for a site or application.</option>
+                  <option value="3">Android Applications Development</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6 col-xs-12">
+              <label for="qFour">What type of music are you into?</label>
+              <select class="question form-control" id="qFour">
+                  <option value="0">Select an option</option>
+                  <option value="0">Electronic</option>
+                  <option value="0">Jazz</option>
+                  <option value="0">Anything really!</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6 col-xs-12">
+              <label for="qFive">Are you able to work together as a team with coworkers or cohorts?</label>
+              <select class="question form-control" id="qFive">
+                  <option value="0">Select an option</option>
+                  <option value="1">Yes</option>
+                  <option value="-100">No</option>
+                  <option value="0">People?</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" name="button">Submit</button>
+        </form>
+      </div>
+      <div class="survey-result">
+        <div class="back-button">
+          <img src="img/exit.png" alt="Close icon">
         </div>
-        <div class="survey-result">
-          <div class="back-button">
-            <img src="img/exit.png" alt="Close icon">
+        <div class="survey-card card" id="frontEnd">
+          <div class="card-body">
+            <h1>You got Front End Development</h1>
+            <p><span class="user-name"></span>, you might be interested in the Front End Development track! Also known as the CSS/React track, which is all about design/aesthetic and functionality of websites or applications. In this track you will learn about HTML, CSS, JavaScript, React, Angular 2 as well as some design principles to break into your career in Front End Development. Everyone has to take part in an Intro to Programming course before your designated track begins. In this intro class you will learn about basic HTML, CSS, JS, and basic programming principles to get a base line understanding on the essentials of web development.</p>
           </div>
-          <div class="survey-card card" id="frontEnd">
-            <div class="card-body">
-              <h1>You got Front End Development</h1>
-              <p><span class="user-name"></span>, you might be interested in the Front End Development track! Also known as the CSS/React track, which is all about design/aesthetic and functionality of websites or applications. In this track you will learn about HTML, CSS, JavaScript, React, Angular 2 as well as some design principles to break into your career in Front End Development. Everyone has to take part in an Intro to Programming course before your designated track begins. In this intro class you will learn about basic HTML, CSS, JS, and basic programming principles to get a base line understanding on the essentials of web development.</p>
-            </div>
+        </div>
+        <div class="survey-card card" id="backEnd">
+          <div class="card-body">
+            <h1>You got Back End Development</h1>
+            <p><span class="user-name"></span>, you might be interested in our PHP course! This course focuses on one of the most popular backend languages today. If you like building content management systems or working with other popular CMSs like Wordpress, or Drupal, this is the course for you. You'll learn things like: Test-Driven Development with PHPUnit, Object-Oriented Design, and Database Basics with SQL. Everyone has to take part in an Intro to Programming course before your designated track begins. In this intro class you will learn about basic HTML, CSS, JS, and basic programming principles to get a base line understanding on the essentials of web development.</p>
           </div>
-          <div class="survey-card card" id="backEnd">
-            <div class="card-body">
-              <h1>You got Back End Development</h1>
-              <p><span class="user-name"></span>, you might be interested in our PHP course! This course focuses on one of the most popular backend languages today. If you like building content management systems or working with other popular CMSs like Wordpress, or Drupal, this is the course for you. You'll learn things like: Test-Driven Development with PHPUnit, Object-Oriented Design, and Database Basics with SQL. Everyone has to take part in an Intro to Programming course before your designated track begins. In this intro class you will learn about basic HTML, CSS, JS, and basic programming principles to get a base line understanding on the essentials of web development.</p>
-            </div>
+        </div>
+        <div class="survey-card card" id="java">
+          <div class="card-body">
+            <h1>You got Java/Android Development</h1>
+            <p><span class="user-name"></span>, you might be interested in the Java/Android track! The Java track is about everything from web applications to backend services to mobile applications to embedded systems. Some things you'll be learning about are: Behavior-Driven Development, Web Applications in Java, Database Basics, and more advanced topics in Java. Everyone has to take part in an Intro to Programming course before your designated track begins. In this intro class you will learn about basic HTML, CSS, JS, and basic programming principles to get a base line understanding on the essentials of web development.</p>
           </div>
-          <div class="survey-card card" id="java">
-            <div class="card-body">
-              <h1>You got Java/Android Development</h1>
-              <p><span class="user-name"></span>, you might be interested in the Java/Android track! The Java track is about everything from web applications to backend services to mobile applications to embedded systems. Some things you'll be learning about are: Behavior-Driven Development, Web Applications in Java, Database Basics, and more advanced topics in Java. Everyone has to take part in an Intro to Programming course before your designated track begins. In this intro class you will learn about basic HTML, CSS, JS, and basic programming principles to get a base line understanding on the essentials of web development.</p>
-            </div>
+        </div>
+        <div class="survey-card card" id="maybeNot">
+          <div class="card-body">
+            <h1>You may not be qualified</h1>
+            <p>If you see this message in error, go back and try again. If you reached this and it isn't an error, you may not be qualified for our program. This outcome is based on the working together question. If you don't like working with others as a team, you may not be the right fit for this program. If you'd like to talk to us more about it, feel free to contact us!</p>
           </div>
-          <div class="survey-card card" id="maybeNot">
-            <div class="card-body">
-              <h1>You may not be qualified</h1>
-              <p>If you see this message in error, go back and try again. If you reached this and it isn't an error, you may not be qualified for our program. This outcome is based on the working together question. If you don't like working with others as a team, you may not be the right fit for this program. If you'd like to talk to us more about it, feel free to contact us!</p>
-            </div>
-          </div>
-          <div class="survey-card card" id="any">
-            <div class="card-body">
-              <h1>You could go any direction!</h1>
-              <p><span class="user-name"></span> you might be interested in any one of our courses that we have to offer. Check out all about the tracks that Epicodus has to offer <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here!</a></p>
-            </div>
+        </div>
+        <div class="survey-card card" id="any">
+          <div class="card-body">
+            <h1>You could go any direction!</h1>
+            <p><span class="user-name"></span>, you might be interested in any one of our courses that we have to offer. Check out all about the tracks that Epicodus has to offer <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here!</a></p>
           </div>
         </div>
       </div>
