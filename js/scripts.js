@@ -9,12 +9,15 @@ $(document).ready(function() {
         if(result <= 4) {
           $("#frontEnd").show();
         } else if(result >= 7) {
-
+          $("#backEnd").show();
         } else if(result > 8) {
-
+          $("#java").show();
         } else {
-
+          $("#any").show();
         }
+        $("button.btn").click(function() {
+          $(".survey").detach();
+        });
         event.preventDefault();
     });
 });
